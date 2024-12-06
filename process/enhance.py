@@ -434,12 +434,12 @@ class aug:
 
 
 if __name__ == "__main__":
-    out_img = r'D:\soft\git\weiweiboni2_project\github\labels\process\sa\img'
+    out_img = ''
     os.makedirs(out_img, exist_ok=True)
-    out_label = r'D:\soft\git\weiweiboni2_project\github\labels\process\sa\label'
+    out_label = ''
     os.makedirs(out_label, exist_ok=True)
-    aug = aug(r'D:\soft\git\weiweiboni2_project\github\labels\process\va',
-              r'D:\soft\git\weiweiboni2_project\github\labels\process\la',
+    aug = aug('',
+              '',
               out_img,
               out_label)
 

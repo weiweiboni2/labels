@@ -6,12 +6,12 @@ import json
 from PIL import Image, ImageDraw, ImageFont
 
 # 加载标签映射
-with open(r'E:\python_pj\yolov8\YOLOv8-main\data\data_enhance\label.json', 'r', encoding='utf-8') as f:
+with open(r'label.json', 'r', encoding='utf-8') as f:
     label_mapping = json.load(f)
 
 # 定义模型路径和保存路径
-model_path = Path(r'E:\python_pj\yolov8\YOLOv8-main\runs\obb\train5\weights\best.pt')
-save_path = Path(r"E:\python_pj\yolov8\YOLOv8-main\data\data_enhance\2.mp4")
+model_path = Path('')
+save_path = Path("")
 
 # 加载中文字体
 font_path = r'C:\Windows\Fonts\msyh.ttc'  # 替换为系统中的中文字体路径
@@ -21,7 +21,7 @@ def yolo_pre():
     yolo = YOLO(model_path)
 
     # 输入视频路径
-    video_path = r'E:\python_pj\yolov8\YOLOv8-main\data\caise.mp4'
+    video_path = ''
     cap = cv2.VideoCapture(video_path)
 
     # 获取视频帧的宽度和高度

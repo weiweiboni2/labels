@@ -71,9 +71,9 @@ def visualise_gt(label_path, pic_path, newpic_path):
 
 if __name__ == '__main__':
     # 设置路径
-    pic_path = r"D:\soft\git\weiweiboni2_project\github\labels\process\sa\img"  # 原始图片文件夹路径
-    label_path = r"D:\soft\git\weiweiboni2_project\github\labels\process\sa\label"  # 标签文件夹路径
-    newpic_path = r'D:\soft\git\weiweiboni2_project\github\labels\process\sa\vv'  # 输出图片保存路径
+    pic_path = ""  # 原始图片文件夹路径
+    label_path = ""  # 标签文件夹路径
+    newpic_path = ''  # 输出图片保存路径
 
     # 创建输出文件夹（若不存在）
     if not os.path.isdir(newpic_path):
