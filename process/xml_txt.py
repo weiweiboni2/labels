@@ -12,9 +12,9 @@ from tqdm import tqdm
 # 定义相关地址参数
 def parse_args():
     parser = parser = argparse.ArgumentParser(description='polygon')
-    parser.add_argument('--in_train_xml_vi_dir', default=r'E:\data\test3\yolo\LLVIP\labels\val_1_padding',
+    parser.add_argument('--in_train_xml_vi_dir', default= '',
                         help='train的XML 文件地址')
-    parser.add_argument('--out_train_txt_vi_dir', default=r'E:\data\test3\yolo\LLVIP\labels\val_1_padding_txt',
+    parser.add_argument('--out_train_txt_vi_dir', default= '',
                         help='train TXT 输出文件地址')
 
 

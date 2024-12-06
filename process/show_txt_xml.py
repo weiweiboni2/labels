@@ -18,8 +18,8 @@ import cv2
 import xml.etree.ElementTree as ET
 
 # 文件路径
-img_path = r'D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\out_img\LLVIP_train_padding_00000.jpg'
-xml_path = r'D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\out_xml\LLVIP_train_padding_00000.xml'
+img_path = 'LLVIP_train_padding_00000.jpg'
+xml_path = 'LLVIP_train_padding_00000.xml'
 
 # 读取图像
 img = cv2.imread(img_path)
@@ -41,6 +41,6 @@ for obj in root.findall('object'):
 
 # 显示图像
 # cv2.imshow('Image with Bounding Boxes', img)
-cv2.imwrite(r"D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\test.png", img)
+cv2.imwrite("test.png", img)
 cv2.waitKey(0)
 # cv2.destroyAllWindows()

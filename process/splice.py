@@ -151,13 +151,13 @@ def main(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--raw_data_path", default=r"D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\test_data", type=str,
+    parser.add_argument("--raw_data_path", default= "", type=str,
                         help="raw dataset files")
-    parser.add_argument("--new_data_path", default=r"D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\out_img", type=str,
+    parser.add_argument("--new_data_path", default= "", type=str,
                         help="images new path")
-    parser.add_argument("--new_xml_path", default=r"D:\soft\git\weiweiboni2_project\github\labels\process\data\padding\out_xml", type=str,
+    parser.add_argument("--new_xml_path", default= "", type=str,
                         help="xml new path")
-    parser.add_argument("--filename", default="LLVIP_val", type=str, help="save name")
+    parser.add_argument("--filename", default="LLVIP", type=str, help="save name")
     return parser.parse_args()
 
 
