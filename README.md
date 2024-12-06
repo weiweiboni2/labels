@@ -1,6 +1,6 @@
 # labels
 
-目标检测数据集及标签制作
+目标检测数据集及标签制作  
 ![python](https://img.shields.io/badge/python-3.9+-yellow.svg)  ![opencv](https://img.shields.io/badge/opnecv-4.10.0+-green.svg)  ![PyQt5](https://img.shields.io/badge/PyQt5-5.15.7-orange.svg)  ![torch](https://img.shields.io/badge/torch-2.2.0-blue.svg)
 
 ## 简介
@@ -11,7 +11,7 @@
 ## 标注工具介绍
 
 - [X-anylabeling](https://github.com/CVHub520/X-AnyLabeling)  
-X-anylabeling是一款开源的图像标注工具，支持多种格式的标签文件。
+X-anylabeling是一款开源的图像标注工具，支持多种格式的标签文件，利用此对所需要的类别进行半自动标注。
 
 ## 数据集扩充
 
