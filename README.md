@@ -71,3 +71,13 @@
   doi={10.1109/TCSVT.2022.3168279}
 }
 >
+>@misc{X-AnyLabeling,
+  year = {2023},
+  author = {Wei Wang},
+  publisher = {Github},
+  organization = {CVHub},
+  journal = {Github repository},
+  title = {Advanced Auto Labeling Solution with Added Features},
+  howpublished = <https://github.com/CVHub520/X-AnyLabeling}}>
+}
+>
