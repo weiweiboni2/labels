@@ -10,8 +10,10 @@
 
 ## 标注工具介绍
 
-- [X-anylabeling](https://github.com/CVHub520/X-AnyLabeling)  
-X-anylabeling是一款开源的图像标注工具，支持多种格式的标签文件，利用此对所需要的类别进行半自动标注。
+[X-anylabeling](https://github.com/CVHub520/X-AnyLabeling)  
+
+- X-anylabeling是一款开源的图像标注工具，支持多种格式的标签文件。
+- 将预训练权重转换为onnx格式，导入X-anylabeling模型，进行自动推理，实现半自动标注。
 
 ## 数据集扩充
 
