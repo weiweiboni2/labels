@@ -15,6 +15,28 @@
 - X-anylabeling是一款开源的图像标注工具，支持多种格式的标签文件。
 - 将预训练权重转换为onnx格式，导入X-anylabeling模型，进行自动推理，实现半自动标注。
 
+    ```python
+    # 安装依赖
+    # 运行pt_onnx.py脚本，对权重进行转换
+    pip install ultralytics onnx onnxruntime
+    python pt_onnx.py
+    ```
+
+- 自定义模型的配置文件：
+
+    ```txt
+    # type 类型是固定的几个类别(官网查看对应类别)，name是模型名称，display_name是显示名称(找到模型的唯一标识符)
+    # 将权重与配置文件放置在同一目录下
+
+    type: yolov8_obb
+    name: yolov8m_obb_UBW-r20241206
+    display_name: yolov8m_obb_UBW_2
+    model_path: E:\python_pj\X-AnyLabeling-main\models\UBW\best.onnx
+    classes:
+    - UBW
+  
+    ```
+
 ## 数据集扩充
 
 1. 对数据集进行旋转、随机裁剪、加噪、随机遮挡等操作，对数据集进行扩充(标签为归一化之后的yolo类型)：
