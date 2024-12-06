@@ -1,7 +1,7 @@
 # labels
 
 目标检测数据集及标签制作  
-![python](https://img.shields.io/badge/python-3.9+-yellow.svg)  ![opencv](https://img.shields.io/badge/opnecv-4.10.0+-green.svg)  ![PyQt5](https://img.shields.io/badge/PyQt5-5.15.7-orange.svg)  ![torch](https://img.shields.io/badge/torch-2.2.0-blue.svg)
+![python](https://img.shields.io/badge/python-3.9+-yellow.svg)  ![opencv](https://img.shields.io/badge/opnecv-4.10.0-green.svg)  ![PyQt5](https://img.shields.io/badge/PyQt5-5.15.7-orange.svg)  ![torch](https://img.shields.io/badge/torch-2.2.0-blue.svg)
 
 ## 简介
 
