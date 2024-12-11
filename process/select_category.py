@@ -27,9 +27,21 @@ class CategoryFilter:
                 lines = file.readlines()
                 # 保留以 '0' 开头的行
                 filtered_lines = [line for line in lines if line.strip().startswith("1") or line.strip().startswith("4")] 
+                # 更新类别id
+                updated_lines = []
+                for line in filtered_lines:
+                     stripped_line = line.strip()
+                     if stripped_line.startswith("1"):
+                        id, rest_line = stripped_line.split(maxsplit=1)
+                        updated_lines.append(f"0 {rest_line}\n")
+                        # updated_lines.append(f"0 {stripped_line.split()[1:]}\n")
+                     elif stripped_line.startswith("4"):
+                        id, rest_line = stripped_line.split(maxsplit=1)
+                        updated_lines.append(f"1 {rest_line}\n")
+                        # updated_lines.append(f"1 {stripped_line.split()[1:]}\n")
                 save_dir = os.path.join(save_path, i)
                 with open(save_dir, "w") as file:
-                    file.writelines(filtered_lines)
+                    file.writelines(updated_lines)
 
     def check_and_delete_empty_txt_files(self):
         # 遍历生成的所选类别的txt目录中的所有文件
@@ -61,7 +73,7 @@ if __name__ == '__main__':
     parser.add_argument('--save_txt_path', type=str, default=r'E:\python_pj\yolov8\YOLOv8-main\data\Security_Gear_Check5\labels')
     parser.add_argument('--images_path', type=str, default=r'E:\python_pj\yolov8\YOLOv8-main\data\Security_Gear_Check5\images5')
     parser.add_argument('--save_img_path', type=str, default=r'E:\python_pj\yolov8\YOLOv8-main\data\Security_Gear_Check5\images')
-    parser.add_argument('--dataset_type', type=str, default='train', help='train/val/test')
+    parser.add_argument('--dataset_type', type=str, default='test', help='train/val/test')
     args = parser.parse_args()
     c_filter = CategoryFilter(args.txt_path, args.save_txt_path, args.images_path, args.save_img_path, args.dataset_type)
     c_filter.process()
